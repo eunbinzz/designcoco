@@ -10,13 +10,28 @@ body {color:#666; font-family: 'Noto Sans KR', sans-serif; font-size: 15px;}
 #header .topmenu a {display:inline-block; border-right:1px solid #ddd; padding: 5px 15px;}
 #header .topmenu a:first-child {border-left:1px solid #ddd}
 
+
 #header h1 {float: left; padding: 15px 0;}
-#header .nav {float: right; color:#1e1e1e; font-size: 18px; padding: 20px 30px ;}
-#header .nav > a {padding:10px 20px; display: inline-block; }
+#nav {text-align: center; }
+#nav .depth1 {float: right; color:#1e1e1e; font-size: 18px; padding:10px 0;}
+
+#nav .depth1 > li {position: relative; display: inline-block; padding:20px 30px 10px 30px;}
+#nav .depth1 > li > a {padding:0 10px ;}
+#nav .depth1 > li > a:hover {color:#00529b}
+#nav .depth2 {position: absolute; width:100%; top:100% ; left: 0; background: #555 ;
+                font-size: 14px; color: #fff ;z-index: 9999;  text-align: center;
+                display: none }
+#nav .depth2 li {padding: 13px 0; border-top: 1px solid #777;}
+#nav .depth2 > li:hover {background: #00529b; color:#dfe9fe}
+#nav .depth1 > li:hover .depth2 {display: block;}
+
+
+
+
+
 
 /* section구역 */
-.main .slide {height: 650px;}
-
+.main .article1 {height: 650px;}
 .main .slide1 {background: url(../img/main_img3.jpg) no-repeat center;
                 height: 650px; position:relative;  background-size: cover;}
 .main .slide_text {position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%);
@@ -26,8 +41,9 @@ body {color:#666; font-family: 'Noto Sans KR', sans-serif; font-size: 15px;}
 .main .slide_text > p:nth-of-type(2) {padding-bottom: 40px;}
 .main .slide_text > a {display: inline-block; font-size: 15px; padding:8px 35px;
                         border: 1px solid #fff;}
+.main .slide_text > a:hover {background:rgba(255, 255, 255, 0.3);}
 
-#section .info {padding-top: 60px;}
+#section .article2 {padding-top: 60px; padding-bottom: 60px;}
 #section .info_title > h2 {color:#000; font-size: 36px; padding-bottom: 15px; text-align: center; font-weight: bold;}
 #section .info_title > p {font-size: 14px; text-align: center; padding-bottom: 30px}
 #section .info {padding-bottom: 60px;}
@@ -42,16 +58,18 @@ body {color:#666; font-family: 'Noto Sans KR', sans-serif; font-size: 15px;}
 #section .pic_text  p:nth-of-type(2) {font-size: 14px; line-height: 1.3;  padding:10px 30px 20px 20px; letter-spacing: 1px;}
 #section .pic_text a {font-size: 11px; border: 1px solid #fff; padding: 8px 40px; text-align: left; margin-left: 20px;
                         display: inline-block; position: absolute; }
+#section .pic_text a:hover {background:rgba(255, 255, 255, 0.3) ;}
 
-#section .intro {background: url(../img/intro_bg.jpg) no-repeat top center; background-size: cover;
-                height: 304px;  position:relative;}
+#section .article3 {background: url(../img/intro_bg.jpg) no-repeat center; background-size: cover;
+                height: 304px;  position:relative; }
 #section .intro_text {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);    
-                        text-align: center; color: #fff;}
+                        text-align: center; color: #fff; }
 #section .intro_text > h2 {font-size: 34px; font-weight: bold;} 
 #section .intro_text > p {font-size: 14px; padding: 30px 0;}  
 #section .intro_text > a {font-size: 13px; border: 1px solid #fff; padding:8px 30px;}                
+#section .intro_text > a:hover {background:rgba(255, 255, 255, 0.3) ;}
 
-#section .product {padding:60px 0 30px 0;}
+#section .article4 {padding:60px 0 30px 0;}
 #section .product_title > h2 {color:#000; font-size: 36px; padding-bottom: 15px; text-align: center; font-weight: bold;}
 #section .product_title > p {font-size: 14px; text-align: center; padding-bottom: 30px}
 #section .pro_pic li {border: 1px solid rgba(0, 0, 0, 0.3); margin:10px 1% 10px 0; width: 32.333%; float: left;
