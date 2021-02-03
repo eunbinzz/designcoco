@@ -26,8 +26,10 @@ button {outline: none;}
 
 
 /* section구역 */
-.main .article1 {height: 650px;}
+.main .article1 {height: 650px; position: relative;}
 .slide_group {position: relative;}
+.article1 .playstop {position: absolute; bottom: 11px; left: 50%; margin-left: 45px; color: rgba(255, 255, 255, 0.9); 
+                     border: none; background: none; font-size: 18px;}
 .slide_group .slick-arrow {position: absolute; top: 50%; transform: translateY(-50%);
                            border: none; background: none; z-index: 9999; font-size: 80px; color:#fff;}
 .slide_group .prev {left: 70px;}
