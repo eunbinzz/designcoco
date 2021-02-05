@@ -12,17 +12,19 @@ button {outline: none;}
 #header .topmenu a:first-child {border-left:1px solid #e3e3e3}
 #header .topmenu a:hover {color:#dbb075}
 #header h1 {float: left; padding: 15px 0;}
-#nav {text-align: center; }
-#nav .depth1 {float: right; color:#1e1e1e; font-size: 18px; padding:10px 0;}
-#nav .depth1 > li {position: relative; display: inline-block; padding:20px 30px 10px 30px;}
+#header .open, #header .close {display: none;}
+#nav {text-align: center; float: right; }
+#nav .depth1 {color:#1e1e1e; font-size: 18px; padding: 10px 0;}
+#nav .depth1 > li {position: relative; display: inline-block; padding: 20px 30px 10px 30px;}
 #nav .depth1 > li > a {padding:0 10px ;}
-#nav .depth1 > li > a:hover {color:#00529b}
 #nav .depth2 {position: absolute; width:100%; top:100% ; left: 0; background: #555 ;
               font-size: 14px; color: #fff ;z-index: 9999;  text-align: center;
               display: none }
 #nav .depth2 li {padding: 13px 0; border-top: 1px solid #777;}
 #nav .depth2 > li:hover {background: #00529b; color:#dfe9fe}
-#nav .depth1 > li:hover .depth2 {display: block;}
+#nav .depth1 > li.on .depth2 {display: block; }
+#nav .depth1 > li > a:hover {color:#00529b}
+
 
 
 /* section구역 */
