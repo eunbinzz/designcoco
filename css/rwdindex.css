@@ -1,6 +1,6 @@
 @media screen and (max-width: 1024px) {
     #header h1 {float: unset; padding: 30px 0 0; text-align: center;}
-    #nav {text-align: center; float: right; }
+    #nav {text-align: center; float: none;}
     #nav .depth1 {color:#1e1e1e; font-size: 18px; padding:0 0; text-align: center;}
     #header .open, #header .close {display: none;}
     #nav .depth1 > li {position: relative; display: inline-block; padding: 15px 25px 15px 25px;}
