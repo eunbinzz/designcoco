@@ -8,13 +8,58 @@ $(".slide_group").slick({
 })
 
 
-$('.article1 .playstop').on('click', function(){
+$('.article1 .playstop').on('click', function () {
     var $ibutton = $(this).find('i')
-    if ($ibutton.hasClass('fa-pause-circle')){
+    if ($ibutton.hasClass('fa-pause-circle')) {
         $('.slide_group').slick('slickPause')
         $ibutton.removeClass('fa-pause-circle').addClass('fa-play-circle')
     } else {
-            $('.slide_group').slick('slickPlay')
-            $ibutton.removeClass('fa-play-circle').addClass('fa-pause-circle')
+        $('.slide_group').slick('slickPlay')
+        $ibutton.removeClass('fa-play-circle').addClass('fa-pause-circle')
     }
+})
+
+var ww = $(window).width()
+console.log(ww)
+if (ww >= 769) {
+    $('#nav .depth1 > li').hover(
+        function () {
+            $(this).addClass('on')
+        },
+        function () {
+            $(this).removeClass('on')
+        }
+    )
+} else {
+    $('#nav .depth1 > li').on('click', function () {
+        $(this).toggleClass('on')
+        $(this).siblings().removeClass('on')
+    })
+}
+
+$('#header .open').on('click', function () {
+    $(this).next().css({
+        display: 'block'
+    })
+    $(this).css({
+        display: 'none'
+    })
+    $(this).next().next().css({
+        display: 'block'
+    })
+})
+$('#header .close').on('click', function () {
+    $(this).prev().css({
+        display: 'none'
+    })
+    $(this).css({
+        display: 'none'
+    })
+    $(this).prev().prev().css({
+        display: 'block'
+    })
+})
+
+$('#header .open').on('click', function () {
+    $(this).toggleClass('on')
 })
