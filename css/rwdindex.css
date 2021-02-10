@@ -2,18 +2,19 @@
 @media screen and (max-width: 1024px) {
     #header {position: relative;}
     /* 검색창 */
-    #header .search {position: absolute; right: 60px; top: 58px; transform: translateY(0%);
-                     font-size: 24px; z-index: 999999;}
+    #header .search {position: absolute; right: 60px; top: 65px; transform: translateY(0%);
+                     font-size: 24px; z-index: 999999; }
     #header .search #sbox {border: none; text-indent: 1em; width: 0; overflow: hidden; 
                            transition: all 0.5s; outline: none;  background: #ddd; 
                            padding: 8px 0px}
     #header .search #sbox.on {width: 200px;}
-    #header .open, #header .close {position: absolute; top: 55px; right: 20px;}
+    #header .open, #header .close {position: absolute; top: 40px; right: 20px;}
     #header .open.on {display: block;}
     #header .close.on {display: block;}
     #header .open button, .close button {font-size: 30px; color: #999; background: none; border: none;}
     #header h1 {float: unset; padding: 30px 0 20px; text-align: left;}
-    #nav {text-align: center; float: unset; position: absolute; top: 100%; right: 0; z-index: 999999; display: none;} 
+    #nav {text-align: center; float: unset; position: absolute; top: 100%; right: 0; 
+          z-index: 999999; display: none;} 
     #header #nav.on {display: block;}
     #nav .depth1 {color:#1e1e1e; font-size: 18px; padding: 0px 0px; text-align: center;
                   display: block; background: #fff; width: 180px; z-index: 99999; }
@@ -26,5 +27,4 @@
     
 
 
-    /* 전체 닫는 괄호 */
-}
+}   /* 전체 닫는 괄호 */
