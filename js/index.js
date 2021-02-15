@@ -5,6 +5,10 @@ $(".slide_group").slick({
     pauseOnFocus: false, // 동그라미번호버튼 클릭시 자동실행 멈춤여부
     prevArrow: '<button class="prev"><i class="fas fa-angle-left"></i></button>',
     nextArrow: '<button class="next"><i class="fas fa-angle-right"></i></button>',
+    responsive: [{
+        breakpoint: 1025, 
+        settings: {arrows: false}
+    }]
 })
 
 
